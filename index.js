@@ -24,7 +24,7 @@ const selectTheme = (theme) => {
     
     let buttons = document.getElementsByTagName('button');
 
-    buttons.array.forEach(element => {
-        element.className = theme;
-    });
+    for(let i = 0; i < buttons.length; i++) {
+        buttons[i].className = theme;
+    }
 };
