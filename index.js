@@ -17,3 +17,14 @@ const reset = () => {
     count = 0;
     element.innerHTML = `<mark>${count}</mark>`;
 };
+
+const selectTheme = (theme) => {
+    document.getElementsByTagName('body')[0].className = theme;
+    document.getElementsByTagName('main')[0].className = theme;
+    
+    let buttons = document.getElementsByTagName('button');
+
+    buttons.array.forEach(element => {
+        element.className = theme;
+    });
+};
