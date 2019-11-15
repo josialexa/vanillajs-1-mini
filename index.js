@@ -1,18 +1,19 @@
 console.log('Hello World');
 
 let count = 0;
+let element = document.getElementById('counter');
 
 const increase = () => {
     count++;
-    console.log(count);
+    element.innerText = count;
 };
 
 const decrease = () => {
     count--;
-    console.log(count);
+    element.innerText = count;
 };
 
 const reset = () => {
     count = 0;
-    console.log(count);
+    element.innerHTML = `<mark>${count}</mark>`;
 };
